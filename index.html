@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
 </head>
 <body>
      <div class="wraper">
@@ -17,12 +18,74 @@
             <div class="grid">
             <nav class="navbar">
                 <ul class="navbar__list">
-                    <li class="navbar__item navbar__item--separate">Vào cửa hàng</li>
-                    <li class="navbar__item">Kết nối</li>
+                    <li class="navbar__item navbar__item--separate navbar__item--qr">
+                        Vào cửa hàng
+                        <div class="qrcode">
+                            <img src="./assets/img/qrcode.png" alt="Mã QR code" class="qrcode__img">
+                            <div class="qrcode__apps">
+                                <a href="" class="qrcode__link"><img src="./assets/img/chplay.png" alt="Tải từ chplay" class="qrcode__img--download"></a>
+                                <a href="" class="qrcode__link"><img src="./assets/img/applestore.png" alt="Tải từ apple" class="qrcode__img--download"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <span class="navbar__item--nopointer">Kết nối</span>
+                        <a href="" class="navbar__icon--link">
+                            <i class=" navbar__icon fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="navbar__icon--link">
+                            <i class=" navbar__icon fab fa-instagram"></i>
+                        </a>
+                    </li>
                 </ul>
                 <ul class="navbar__list">
-                    <li class="navbar__item"> <a href="" class="navbar__link">Thông báo</a> </li>
-                    <li class="navbar__item"><a href="" class="navbar__link">Trợ giúp</a></li>
+                    <li class="navbar__item"> 
+                        <a href="" class="navbar__link">
+                            <i class=" navbar__icon fas fa-bell"></i>
+                            Thông báo
+                        </a> 
+                        <div class="notify">
+                            <header class="notify__header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="notify__list">
+                                <li class="notify__item notify__item--viewed">
+                                    <a href="#" class="notify__link">
+                                        <img src="./assets/img/notify.png" alt="" class="notify__img">
+                                        <div class="notify__body">
+                                            <span class="notify__title">Mỹ phẩm chính hãng</span>
+                                            <span class="notify__desc">Để cảm ơn sự ủng hộ và yêu thích của khách hàng ...</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify__item">
+                                    <a href="#" class="notify__link">
+                                        <img src="./assets/img/notify.png" alt="" class="notify__img">
+                                        <div class="notify__body">
+                                            <span class="notify__title">Mỹ phẩm chính hãng</span>
+                                            <span class="notify__desc">Để cảm ơn sự ủng hộ và yêu thích của khách hàng ...</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify__item">
+                                    <a href="#" class="notify__link notify__item--viewed">
+                                        <img src="./assets/img/notify.png" alt="" class="notify__img">
+                                        <div class="notify__body">
+                                            <span class="notify__title">Mỹ phẩm chính hãng</span>
+                                            <span class="notify__desc">Để cảm ơn sự ủng hộ và yêu thích của khách hàng ...</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="notify__footer">
+                                <a href="" class="notify__button">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">
+                            <i class=" navbar__icon fas fa-question-circle"></i>
+                            Trợ giúp</a></li>
                     <li class="navbar__item navbar__item--strong navbar__item--separate">Đăng ký</li>
                     <li class="navbar__item navbar__item--strong">Đăng nhập</li>
                 </ul>
